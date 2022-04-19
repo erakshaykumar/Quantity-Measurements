@@ -18,7 +18,7 @@ public class Inch {
 	/*
 	 * @Purpose: Compare Units Inch Values
 	 * 
-	 * @Param: Object Value
+	 * @Param: Object Values
 	 * 
 	 * @Result: Boolean Value (True,False)
 	 */
@@ -30,6 +30,14 @@ public class Inch {
 			return false;
 		Inch inch = (Inch) obj;
 		return Double.compare(inch.value, value) == 0;
+	}
+
+	public void setValue(double value) {
+		this.value = value;
+	}
+
+	public double getValue() {
+		return this.value;
 	}
 
 }

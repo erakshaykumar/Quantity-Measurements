@@ -18,7 +18,7 @@ public class Feet {
 	/*
 	 * @Purpose: Compare Units Feet Values
 	 * 
-	 * @Param: Object Value
+	 * @Param: Object Values
 	 * 
 	 * @Result: Boolean Value (True,False)
 	 */
