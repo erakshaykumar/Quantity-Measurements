@@ -16,7 +16,7 @@ public class Inch {
 	}
 
 	/*
-	 * @Purpose: Compare Units Inch Value
+	 * @Purpose: Compare Units Inch Values
 	 * 
 	 * @Param: Object Values
 	 * 

@@ -1,5 +1,5 @@
 /* @Purpose: As a math student, I wish to compare lengths 1ft = 12in 
- * TC 1.7 - Given 0 Inch and 0 Inch Should Return equal 
+ * TC 1.8 - Given 0 Inch and 1 Inch Should Return NotEqual 
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -117,6 +117,16 @@ public class QuantityTest {
 		Inch inch1 = new Inch(0.0);
 		Inch inch2 = new Inch(0.0);
 		Assert.assertEquals(inch1, inch2);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting 0 Inch And 1 Inch UnEquality Check
+	 */
+	@Test
+	public void given0Inchand1Inch_ShouldReturnNotEqual() {
+		Inch inch1 = new Inch(0.0);
+		Inch inch2 = new Inch(1.0);
+		Assert.assertNotEquals(inch1, inch2);
 	}
 
 }
