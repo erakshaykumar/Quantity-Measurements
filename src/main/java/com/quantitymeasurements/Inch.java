@@ -1,4 +1,4 @@
-/* @Purpose: As a math student, I wish to compare lengths 1ft = 12in 
+/* @Purpose: As A Math Student, I Wish To Compare Lengths 1ft = 12in  
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */

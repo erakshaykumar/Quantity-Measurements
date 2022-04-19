@@ -1,5 +1,5 @@
 /* @Purpose: As a math student, I wish to compare lengths 1ft = 12in 
- * TC 1.5 - 1: Null Check, 2: Reference Check, 3: Type Check
+ * TC 1.6 - 1: Null Check, 2: Reference Check, 3: Type Check, 4: Value Check For Equality 
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -81,5 +81,31 @@ public class QuantityTest {
 		Feet feet = new Feet();
 		Inch inch = new Inch();
 		Assert.assertNotEquals(feet, inch);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting Different Value In Different Object Return Equal
+	 * Check
+	 */
+	@Test
+	public void givenSameValuesInDifferentObjects_shouldReturnEqual() {
+		Feet feet = new Feet();
+		feet.setValue(2);
+		Feet feet1 = new Feet();
+		feet1.setValue(2);
+		Assert.assertEquals(feet.getValue(), feet1.getValue(), 0.0);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting Different Value In Different Object Return
+	 * NotEqual Check
+	 */
+	@Test
+	public void givenDifferentValuesInDifferentObjects_shouldReturnNotEqual() {
+		Feet feet = new Feet();
+		feet.setValue(5);
+		Feet feet1 = new Feet();
+		feet1.setValue(7);
+		Assert.assertNotEquals(feet.getValue(), feet1.getValue(), 0.0);
 	}
 }
