@@ -18,7 +18,7 @@ public class Inch {
 	/*
 	 * @Purpose: Compare Units Inch Values
 	 * 
-	 * @Param: Object Values
+	 * @Param: Object Value
 	 * 
 	 * @Result: Boolean Value (True,False)
 	 */
