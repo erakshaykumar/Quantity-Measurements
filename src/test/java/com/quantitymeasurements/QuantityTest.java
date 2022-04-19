@@ -1,5 +1,5 @@
 /* @Purpose: As a math student, I wish to compare lengths 1ft = 12in 
- * TC 1.2 - Given 0 Feet and 1 Feet Should Return NotEqual
+ * TC 1.3 - 1: Null Check
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -9,7 +9,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /*
- * @Purpose: Compare 0 Feet = 0 Feet 
+ * @Purpose: Compare Feet = Feet 
  * @Param: Values in Feet 
  * @Result: Boolean Result
  */
@@ -32,5 +32,16 @@ public class QuantityTest {
 		Feet feet1 = new Feet(0.0);
 		Feet feet2 = new Feet(1.0);
 		Assert.assertNotEquals(feet1, feet2);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting Null Feet Value Check
+	 */
+	@Test
+	public void givenNullFeetValue_shouldReturnFalse() {
+		Feet feet = new Feet(0.0);
+		Assert.assertFalse(feet.equals(null));
+		Assert.assertNotNull(feet);
+		Assert.assertNotEquals(null, feet);
 	}
 }
