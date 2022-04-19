@@ -20,7 +20,7 @@ public class Feet {
 	 * 
 	 * @Param: Object Values
 	 * 
-	 * @Result: Boolean Value (True,False)
+	 * @Result: Boolean Values (True,False)
 	 */
 	@Override
 	public boolean equals(Object obj) {

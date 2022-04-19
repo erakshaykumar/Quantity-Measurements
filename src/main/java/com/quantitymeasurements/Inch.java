@@ -20,7 +20,7 @@ public class Inch {
 	 * 
 	 * @Param: Object Values
 	 * 
-	 * @Result: Boolean (True,False)
+	 * @Result: Boolean Values (True,False)
 	 */
 	@Override
 	public boolean equals(Object obj) {

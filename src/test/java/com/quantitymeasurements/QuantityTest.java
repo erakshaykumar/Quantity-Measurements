@@ -1,5 +1,5 @@
 /* @Purpose: As a math student, I wish to compare lengths 1ft = 12in 
- * TC 1.8 - Given 0 Inch and 1 Inch Should Return NotEqual 
+ * TC 1.9 - 1: Null Check.
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -127,6 +127,17 @@ public class QuantityTest {
 		Inch inch1 = new Inch(0.0);
 		Inch inch2 = new Inch(1.0);
 		Assert.assertNotEquals(inch1, inch2);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting Null Inch Value Check
+	 */
+	@Test
+	public void givenInchObjectWhenComparedWithNullValue_shouldReturnFalse() {
+		Inch inch1 = new Inch(0.0);
+		Assert.assertFalse(inch1.equals(null));
+		Assert.assertNotNull(inch1);
+		Assert.assertNotEquals(null, inch1);
 	}
 
 }
