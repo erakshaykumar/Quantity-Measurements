@@ -1,5 +1,5 @@
 /* @Purpose: As a math student, I wish to compare lengths 1ft = 12in 
- * TC 1.6 - 1: Null Check, 2: Reference Check, 3: Type Check, 4: Value Check For Equality 
+ * TC 1.7 - Given 0 Inch and 0 Inch Should Return equal 
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -9,9 +9,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /*
- * @Purpose: Compare Feet = Feet 
- * @Param: Values in Feet 
- * @Result: Boolean Result
+ * @Purpose: Compare Feet = Feet and Inch = Inch
+ * @Param: Values in Feet And Inch
+ * @Result: Boolean Results
  */
 public class QuantityTest {
 	/**
@@ -108,4 +108,15 @@ public class QuantityTest {
 		feet1.setValue(7);
 		Assert.assertNotEquals(feet.getValue(), feet1.getValue(), 0.0);
 	}
+
+	/**
+	 * Rigorous Test :- For Getting 0 Inch And 0 Inch Equality Check
+	 */
+	@Test
+	public void given0Inchand0Inch_ShouldReturnEqual() {
+		Inch inch1 = new Inch(0.0);
+		Inch inch2 = new Inch(0.0);
+		Assert.assertEquals(inch1, inch2);
+	}
+
 }

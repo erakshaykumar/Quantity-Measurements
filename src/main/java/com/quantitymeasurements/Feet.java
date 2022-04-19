@@ -16,7 +16,7 @@ public class Feet {
 	}
 
 	/*
-	 * @Purpose: Compare Units Feet Value
+	 * @Purpose: Compare Units Feet Values
 	 * 
 	 * @Param: Object Values
 	 * 
