@@ -1,4 +1,5 @@
-/* @Purpose: As a math student, I wish to compare lengths 2in = 5cm
+/* @Purpose: As a math student, I want to be able to add two lengths in inches
+ * 2 in + 2 in = 4 in
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -350,5 +351,16 @@ public class QuantityTest {
 		double value1 = quantityMeasurement.unitComparision(Units.INCH, 2.0);
 		double value2 = quantityMeasurement.unitComparision(Units.CM, 5.0);
 		Assert.assertEquals(value1, value2, 0.0);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting 2 Inch And 2 Inch Equals 4 Check
+	 */
+	@Test
+	public void givenTwoInchAndTwoInch_WhenAdded_ShouldReturnFourInch() {
+		double value1 = quantityMeasurement.unitComparision(Units.INCH, 2.0);
+		double value2 = quantityMeasurement.unitComparision(Units.INCH, 2.0);
+		Assert.assertEquals(4, value1 + value2, 0.0);
+
 	}
 }
