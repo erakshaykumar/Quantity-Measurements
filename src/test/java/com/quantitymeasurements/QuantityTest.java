@@ -1,5 +1,4 @@
-/* @Purpose: As a math student, I wish to compare lengths 
- * TC 1.18 - 1: 3ft = 1yd, 2: 1ft != 1yd, 3: 1in != 1yd, 4: 1yd = 36in, 5: 36in = 1yd, 6: 1yd = 3ft
+/* @Purpose: As a math student, I wish to compare lengths 2in = 5cm
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -323,4 +322,23 @@ public class QuantityTest {
 		Assert.assertEquals(value1, value2, 0.0);
 	}
 
+	/**
+	 * Rigorous Test :- For Getting 0 CM And 0 CM Equality Check
+	 */
+	@Test
+	public void given0cmAnd0cm_shouldReturnEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.CM, 0.0);
+		double value2 = quantityMeasurement.unitComparision(Units.CM, 0.0);
+		Assert.assertEquals(value1, value2, 0.0);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting 0 CM And 1 CM Equality Check
+	 */
+	@Test
+	public void given0cmAnd1cm_shouldReturnNotEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.CM, 0.0);
+		double value2 = quantityMeasurement.unitComparision(Units.CM, 1.0);
+		Assert.assertNotEquals(value1, value2, 0.0);
+	}
 }
