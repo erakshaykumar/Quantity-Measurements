@@ -1,5 +1,5 @@
 /* @Purpose: As a math student, I wish to compare lengths 
- * TC 1.13 - 1: 3ft = 1yd, 2: 1ft != 1yd
+ * TC 1.14 - 1: 3ft = 1yd, 2: 1ft != 1yd
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
