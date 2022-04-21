@@ -5,7 +5,7 @@
 package com.quantitymeasurements;
 
 /*
- * @Purpose: Enum Units Feet, Inch Values
+ * @Purpose: Enum Units Feet, Inch Value
  * 
  * @Param: Object Unit Values
  */
