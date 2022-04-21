@@ -1,4 +1,4 @@
-/* @Purpose: As A Math Student, I Wish To Compare Lengths 
+/* @Purpose: As A Math Student, I Wish To Compare Lengths And Volume
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -9,6 +9,10 @@ public class QuantityMeasurement {
 	double inch;
 
 	public double unitComparision(LengthUnits units, double value) {
+		return units.unit * value;
+	}
+
+	public double unitConversion(VolumeUnits units, Double value) {
 		return units.unit * value;
 	}
 
