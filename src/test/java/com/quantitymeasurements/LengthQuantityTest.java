@@ -14,7 +14,7 @@ import org.junit.Test;
  * @Param: Values in Feet And Inch
  * @Result: Boolean Results
  */
-public class QuantityTest {
+public class LengthQuantityTest {
 
 	private QuantityMeasurement quantityMeasurement;
 
@@ -84,7 +84,7 @@ public class QuantityTest {
 	@Test
 	public void giveDifferentTypesOfObjects_shouldReturnNotEqual() {
 		QuantityMeasurement quantityMeasurement1 = new QuantityMeasurement();
-		QuantityTest quantityTest = new QuantityTest();
+		LengthQuantityTest quantityTest = new LengthQuantityTest();
 		Assert.assertNotEquals(quantityMeasurement1, quantityTest);
 	}
 
@@ -164,7 +164,7 @@ public class QuantityTest {
 	 */
 	@Test
 	public void givenTwoTypesOfObject_WhenNotEqual_ShouldReturnTrue() {
-		QuantityTest quantityTest = new QuantityTest();
+		LengthQuantityTest quantityTest = new LengthQuantityTest();
 		Assert.assertNotEquals(quantityTest, quantityMeasurement);
 	}
 
