@@ -341,4 +341,14 @@ public class QuantityTest {
 		double value2 = quantityMeasurement.unitComparision(Units.CM, 1.0);
 		Assert.assertNotEquals(value1, value2, 0.0);
 	}
+
+	/**
+	 * Rigorous Test :- For Getting 2 Inch And 5 CM Equality Check
+	 */
+	@Test
+	public void given2inAnd5cm_shouldReturnEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.INCH, 2.0);
+		double value2 = quantityMeasurement.unitComparision(Units.CM, 5.0);
+		Assert.assertEquals(value1, value2, 0.0);
+	}
 }
