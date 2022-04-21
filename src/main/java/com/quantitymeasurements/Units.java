@@ -11,6 +11,7 @@ package com.quantitymeasurements;
  */
 public enum Units {
 	FEET(30), INCH(2.5), YARD(90), CM(1);
+	// FEET(12), INCH(1), YARD(36), CM(1 / 2.5);
 
 	public double unit;
 
