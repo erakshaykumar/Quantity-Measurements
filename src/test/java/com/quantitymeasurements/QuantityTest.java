@@ -1,5 +1,5 @@
 /* @Purpose: As a math student, I wish to compare lengths 
- * TC 1.17 - 1: 3ft = 1yd, 2: 1ft != 1yd, 3: 1in != 1yd, 4: 1yd = 36in, 5: 36in = 1yd
+ * TC 1.18 - 1: 3ft = 1yd, 2: 1ft != 1yd, 3: 1in != 1yd, 4: 1yd = 36in, 5: 36in = 1yd, 6: 1yd = 3ft
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -310,6 +310,16 @@ public class QuantityTest {
 	public void given36inand1yd_shouldReturnEqual() {
 		double value1 = quantityMeasurement.unitComparision(Units.INCH, 36);
 		double value2 = quantityMeasurement.unitComparision(Units.YARD, 1);
+		Assert.assertEquals(value1, value2, 0.0);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting 1 Yard And 3 Feet Equality Check
+	 */
+	@Test
+	public void given1ydand3ft_shouldReturnEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.YARD, 1);
+		double value2 = quantityMeasurement.unitComparision(Units.FEET, 3);
 		Assert.assertEquals(value1, value2, 0.0);
 	}
 
