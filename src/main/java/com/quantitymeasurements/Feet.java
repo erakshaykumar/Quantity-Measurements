@@ -1,4 +1,4 @@
-/* @Purpose: As A Math Student, I Wish To Compare Lengths 1ft = 12in 
+/* @Purpose: As A Math Student, I Wish To Compare Lengths
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
