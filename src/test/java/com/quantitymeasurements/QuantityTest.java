@@ -1,5 +1,5 @@
 /* @Purpose: As a math student, I want to be able to add two lengths in inches
- * 2in + 2in = 4in, 1ft + 2in = 14in, 1ft + 1ft = 24in
+ * 2in + 2in = 4in, 1ft + 2in = 14in, 1ft + 1ft = 24in, 2 in + 2.5 cm = 3 in
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -384,7 +384,16 @@ public class QuantityTest {
 		double value2 = quantityMeasurement.unitComparision(Units.FEET, 1);
 		double value3 = quantityMeasurement.unitComparision(Units.INCH, 24.0);
 		Assert.assertEquals(value3, value1 + value2, 0.0);
-
 	}
 
+	/**
+	 * Rigorous Test :- For Getting 2 Inch And 2.5 Cm Equals 3 Inch Check
+	 */
+	@Test
+	public void givenTwoInchAndTwoPointFiveCm_WhenAdded_ShouldReturnThreeInch() {
+		double value1 = quantityMeasurement.unitComparision(Units.INCH, 2.0);
+		double value2 = quantityMeasurement.unitComparision(Units.CM, 2.5);
+		double value3 = quantityMeasurement.unitComparision(Units.INCH, 3.0);
+		Assert.assertEquals(value3, value1 + value2, 0.0);
+	}
 }
