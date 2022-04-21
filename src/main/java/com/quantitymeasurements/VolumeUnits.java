@@ -9,12 +9,17 @@ package com.quantitymeasurements;
  * 
  * @Param: Object Unit Values
  */
-public enum VolumeUnits {
+public enum VolumeUnits implements Units {
 	GALLON(3.78 * 1000), LITER(1000), MILLILITER(1);
 
 	public double unit;
 
 	VolumeUnits(double units) {
 		this.unit = units;
+	}
+
+	@Override
+	public double unitConversion(Double value) {
+		return unit * value;
 	}
 }

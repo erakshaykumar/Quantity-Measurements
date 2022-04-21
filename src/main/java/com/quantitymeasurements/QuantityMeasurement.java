@@ -1,48 +1,20 @@
-/* @Purpose: As A Math Student, I Wish To Compare Lengths And Volume
+/* @Purpose: As A Math Student, I Wish To Conversion and Addition Of Lengths,Volume,Weight,Temperature
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
 package com.quantitymeasurements;
 
 public class QuantityMeasurement {
-	double feet;
-	double inch;
-
-	public double unitComparision(LengthUnits units, double value) {
-		return units.unit * value;
-	}
-
-	public double unitConversion(VolumeUnits units, Double value) {
-		return units.unit * value;
-	}
-
-	public double unitAddition(VolumeUnits unit1, double value1, VolumeUnits unit2, double value2) {
-		return unitConversion(unit1, value1) + unitConversion(unit2, value2);
-	}
-
-	public double unitConversion(WeightUnits units, Double value) {
-		return units.unit * value;
-	}
-
-	public double unitAddition(WeightUnits unit1, double value1, WeightUnits unit2, double value2) {
-		return unitConversion(unit1, value1) + unitConversion(unit2, value2);
-	}
-
-	/*
-	 * @Purpose: Compare Units Value
-	 * 
-	 * @Param: Object Values
-	 * 
-	 * @Result: Boolean Value (True,False)
-	 */
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null || getClass() != obj.getClass())
-			return false;
-		QuantityMeasurement that = (QuantityMeasurement) obj;
-		return Double.compare(that.feet, feet) == 0 && Double.compare(that.inch, inch) == 0;
+		return super.equals(obj);
 	}
 
+	public double unitConversion(Units units, Double value) {
+		return units.unitConversion(value);
+	}
+
+	public double unitAddition(Units unit1, double value1, Units unit2, double value2) {
+		return unit1.unitConversion(value1) + unit2.unitConversion(value2);
+	}
 }
