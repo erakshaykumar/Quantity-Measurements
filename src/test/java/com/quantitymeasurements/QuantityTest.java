@@ -1,5 +1,5 @@
 /* @Purpose: As a math student, I wish to compare lengths 
- * TC 1.12 - 1: Null Check, 2: Reference Check, 3: Type Check 4: Value Check For Equality.
+ * TC 1.13 - 1: 3ft = 1yd
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -241,6 +241,26 @@ public class QuantityTest {
 		double value1 = quantityMeasurement.unitComparision(Units.FEET, 1.0);
 		double value2 = quantityMeasurement.unitComparision(Units.INCH, 12.0);
 		Assert.assertEquals(value1, value2, 0.0);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting 0 Yard And 0 Yard Equality Check
+	 */
+	@Test
+	public void given0yardand0yard_shouldReturnEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.YARD, 0.0);
+		double value2 = quantityMeasurement.unitComparision(Units.YARD, 0.0);
+		Assert.assertEquals(value1, value2, 0.0);
+	}
+
+	/**
+	 * Rigorous Test :- For Getting 0 Yard And 1 Yard Equality Check
+	 */
+	@Test
+	public void given0yardand1yard_shouldReturnEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.YARD, 0.0);
+		double value2 = quantityMeasurement.unitComparision(Units.YARD, 1.0);
+		Assert.assertNotEquals(value1, value2, 0.0);
 	}
 
 }

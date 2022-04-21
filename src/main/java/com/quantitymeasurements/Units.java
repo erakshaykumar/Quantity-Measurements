@@ -10,7 +10,7 @@ package com.quantitymeasurements;
  * @Param: Object Unit Values
  */
 public enum Units {
-	FEET(12), INCH(1);
+	FEET(12.0), INCH(1.0), YARD(36.0);
 
 	public double unit;
 
