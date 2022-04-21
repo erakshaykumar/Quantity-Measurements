@@ -263,4 +263,14 @@ public class QuantityTest {
 		Assert.assertNotEquals(value1, value2, 0.0);
 	}
 
+	/**
+	 * Rigorous Test :- For Getting 3 Feet And 1 Yard Equality Check
+	 */
+	@Test
+	public void given3ftand1yd_shouldReturnEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.FEET, 3);
+		double value2 = quantityMeasurement.unitComparision(Units.YARD, 1);
+		Assert.assertEquals(value1, value2, 0.0);
+	}
+
 }
