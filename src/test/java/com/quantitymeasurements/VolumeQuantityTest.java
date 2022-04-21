@@ -1,5 +1,5 @@
 /* @Purpose: As A Math Student, I Wish To Compare Volume
- * 0 gallon = 0 gallon, 1 gallon = 3.78 litres, 1 gallon = 3.78 litres 
+ * 0 gallon = 0 gallon, 1 gallon = 3.78 liters, 1 gallon = 3.78 liters 
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -28,7 +28,7 @@ public class VolumeQuantityTest {
 	}
 
 	/**
-	 * Rigorous Test :- For Getting 1 Gallon And 3.78 Litres Equality Check
+	 * Rigorous Test :- For Getting 1 Gallon And 3.78 Liters Equality Check
 	 */
 	@Test
 	public void given1GallonandThreepointSevenEightLitersWhenEqual_ShouldReturnEqual() {
@@ -38,7 +38,7 @@ public class VolumeQuantityTest {
 	}
 
 	/**
-	 * Rigorous Test :- For Getting 1 Litre And 1000 Ml Equality Check
+	 * Rigorous Test :- For Getting 1 Liter And 1000 Ml Equality Check
 	 */
 	@Test
 	public void given1litreand1000MilliLitersWhenEqual_ShouldReturnEqual() {
