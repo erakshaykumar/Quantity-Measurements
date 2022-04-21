@@ -1,4 +1,4 @@
-/* @Purpose: As A Math Student, I Wish To Compare Lengths  
+/* @Purpose: As A Math Student, I Wish To Compare Lengths   
  * @File: Quantity Measurement 
  * @Author: Akshay Kumar
  */
@@ -16,7 +16,7 @@ public class Inch {
 	}
 
 	/*
-	 * @Purpose: Compare Units Inch Values
+	 * @Purpose: Compare Units Inch Value
 	 * 
 	 * @Param: Object Values
 	 * 

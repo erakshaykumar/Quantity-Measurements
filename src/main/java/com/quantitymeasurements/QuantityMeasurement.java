@@ -13,7 +13,7 @@ public class QuantityMeasurement {
 	}
 
 	/*
-	 * @Purpose: Compare Units Values
+	 * @Purpose: Compare Unit Values
 	 * 
 	 * @Param: Object Values
 	 * 

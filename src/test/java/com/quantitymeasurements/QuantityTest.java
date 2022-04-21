@@ -189,4 +189,35 @@ public class QuantityTest {
 		double value2 = new QuantityMeasurement().unitComparision(Units.INCH, 1.0);
 		Assert.assertNotEquals(value1, value2, 0.0);
 	}
+
+	/**
+	 * Rigorous Test :- After Getting Re-factor Checking 0 Feet and 0 Inch Equality
+	 */
+	@Test
+	public void given0Feetand0Inch_ShouldReturnEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.FEET, 0.0);
+		double value2 = quantityMeasurement.unitComparision(Units.INCH, 0.0);
+		Assert.assertEquals(value1, value2, 0.0);
+	}
+
+	/**
+	 * Rigorous Test :- After Getting Re-factor Checking 0 Feet and 1 Inch Equality
+	 */
+	@Test
+	public void given0Feetand1Inch_ShouldReturnNotEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.FEET, 0.0);
+		double value2 = quantityMeasurement.unitComparision(Units.INCH, 1.0);
+		Assert.assertNotEquals(value1, value2, 0.0);
+	}
+
+	/**
+	 * Rigorous Test :- After Getting Re-factor Checking 1 Feet and 0 Inch Equality
+	 */
+	@Test
+	public void given1Feetand0Inch_ShouldReturnNotEqual() {
+		double value1 = quantityMeasurement.unitComparision(Units.FEET, 1.0);
+		double value2 = quantityMeasurement.unitComparision(Units.INCH, 0.0);
+		Assert.assertNotEquals(value1, value2, 0.0);
+	}
+
 }
